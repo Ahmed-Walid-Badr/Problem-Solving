@@ -1,0 +1,26 @@
+# JetBrains IDE Settings (CLion & PyCharm)
+.idea/
+.vscode/
+
+# Build Directories & CMake Generated Files
+**/cmake-build-debug/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# Compiled Object Files & Executables
+*.exe
+*.o
+*.obj
+*.out
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# OS Clutter
+Thumbs.db
+Desktop.ini
+*.log
