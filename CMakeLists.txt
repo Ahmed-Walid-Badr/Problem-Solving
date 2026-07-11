@@ -11,5 +11,6 @@ foreach(SOURCE_FILE ${SOURCES})
     get_filename_component(TARGET_NAME ${SOURCE_FILE} NAME_WE)
 
     add_executable(${TARGET_NAME} ${SOURCE_FILE}
-            C++/Codeforces/50A.cpp)
+            C++/Codeforces/50A.cpp
+    )
 endforeach()

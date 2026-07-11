@@ -1,7 +1,7 @@
 ## 🏆 Trophies Wall
 
 ### 📊 Total Problems Solved
-* 🐍 **Python:** 
+* 🐍 **Python:** 34
 * 🚀 **C++:**
 
 ### 💡 Milestone Problems & Key Techniques
