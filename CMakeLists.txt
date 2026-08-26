@@ -12,5 +12,6 @@ foreach(SOURCE_FILE ${SOURCES})
 
     add_executable(${TARGET_NAME} ${SOURCE_FILE}
             C++/Codeforces/50A.cpp
+            C++/AtCoder/abc169_a.cpp
     )
 endforeach()
