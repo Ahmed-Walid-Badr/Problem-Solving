@@ -37,5 +37,17 @@ foreach(SOURCE_FILE ${SOURCES})
             C++/AtCoder/abc191_a.cpp
             C++/AtCoder/abc175_a.cpp
             C++/AtCoder/abc205_a.cpp
+            C++/AtCoder/abc043_a.cpp
+            C++/AtCoder/abc218_b.cpp
+            C++/Codeforces/467A.cpp
+            C++/Codeforces/282A.cpp
+            C++/Codeforces/231A.cpp
+            C++/Codeforces/791A.cpp
+            C++/Codeforces/977A.cpp
+            C++/Codeforces/263A.cpp
+            C++/Codeforces/492A.cpp
+            C++/Codeforces/158B.cpp
+            C++/Codeforces/122A.cpp
+            C++/Codeforces/2132B.cpp
     )
 endforeach()
