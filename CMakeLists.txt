@@ -49,5 +49,15 @@ foreach(SOURCE_FILE ${SOURCES})
             C++/Codeforces/158B.cpp
             C++/Codeforces/122A.cpp
             C++/Codeforces/2132B.cpp
+            C++/AtCoder/abc134_a.cpp
+            C++/AtCoder/abc074_a.cpp
+            C++/CodeChef/LUCLO.cpp
+            C++/CodeChef/OFFBY1.cpp
+            C++/EOlymp/8638.cpp
+            C++/EOlymp/519.cpp
+            C++/EOlymp/8888.cpp
+            C++/Aizu/ITP1_1_B.cpp
+            C++/Aizu/ITP1_1_C.cpp
+            C++/Aizu/ITP1_1_D.cpp
     )
 endforeach()
