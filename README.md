@@ -16,7 +16,7 @@
   * **language:** C++
   * **Technique Level:** Easy
   * **Key Takeaway:** Expressions with Values
-  * **Explanation:** A variable isn't the only thing that has a value, but also expressions do have. Expressions evaluate to values (e.g. x=5 as an expression evaluates to 5 then x=x-3 evaluates to 2). Applying this we can use result=(x-=3) if we need to assign new values to both result and x instead of result=x-3; x-=3;
+  * **Explanation:** A variable isn't the only thing that has a value, but also expressions do have. Expressions evaluate to values (e.g. x=5 as an expression evaluates to 5 then x=x-3 evaluates to 2), also boolean expressions evaluate to 1 if True and 0 if False.  Applying this we can use result=(x-=3) if we need to assign new values to both result and x instead of result=x-3; x-=3;
 ```mermaid
 graph TD
     Assign["="] --> VarRes["result"]
