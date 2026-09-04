@@ -59,5 +59,11 @@ foreach(SOURCE_FILE ${SOURCES})
             C++/Aizu/ITP1_1_B.cpp
             C++/Aizu/ITP1_1_C.cpp
             C++/Aizu/ITP1_1_D.cpp
+            C++/AtCoder/abc161_a.cpp
+            C++/AtCoder/abc185_a.cpp
+            C++/AtCoder/abc377_a.cpp
+            C++/Codeforces/486A.cpp
+            C++/Aizu/ITP1_2_D.cpp
+            C++/AtCoder/abc215_a.cpp
     )
 endforeach()
