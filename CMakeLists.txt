@@ -65,5 +65,26 @@ foreach(SOURCE_FILE ${SOURCES})
             C++/Codeforces/486A.cpp
             C++/Aizu/ITP1_2_D.cpp
             C++/AtCoder/abc215_a.cpp
+            C++/Codeforces/1999A.cpp
+            C++/Gyms/pattern-4.cpp
+            C++/Gyms/Say-Hello-with-C++.cpp
+            C++/Gyms/Basic-Data-Types.cpp
+            C++/Gyms/Simple-Calculator.cpp
+            C++/Gyms/Difference.cpp
+            C++/Gyms/Digits-Summation.cpp
+            C++/Gyms/Summation-from--1-to--n.cpp
+            C++/Gyms/Triangle.cpp
+            C++/Gyms/Number-game.cpp
+            C++/Gyms/valid-password.cpp
+            C++/Gyms/playing-game.cpp
+            C++/Gyms/Divisibility.cpp
+            C++/Codeforces/365A.cpp
+            C++/Gyms/Lucky.cpp
+            C++/Gyms/even-or-odd.cpp
+            C++/Gyms/Tourist.cpp
+            C++/Gyms/Hot.cpp
+            C++/Gyms/confusing-char.cpp
+            C++/Gyms/Convert-case.cpp
+            C++/Gyms/Interval.cpp
     )
 endforeach()
