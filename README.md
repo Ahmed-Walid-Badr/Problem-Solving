@@ -2,7 +2,7 @@
 
 ### 📊 Total Problems Solved
 * 🐍 **Python: 34**
-* 🚀 **C++: 75**
+* 🚀 **C++: 78**
 
 ### 💡 Milestone Problems & Key Techniques
 * **Rainy Season | Atcoder / abc175_a | https://atcoder.jp/contests/abc175/tasks/abc175_a?lang=en**
