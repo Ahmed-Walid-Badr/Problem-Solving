@@ -22,7 +22,7 @@
 * **General Idea**
   * **Language:** C++
   * **Technique Level:** Basics
-  * **Key Takeaway:** Generalization
+  * **Key Takeaway:** Generalization/Implicit Type Promotion
   * **Explanation:** Generalization is what happens when in one operation the two operands are of different datatypes, so the more general datatype prevails for the result
 <hr>
 
@@ -54,8 +54,78 @@ graph TD
 ```
 > Note: result now holds the value 2
 
-
 ```mermaid
 graph TD
     Num2["2"]
 ```
+<hr>
+
+* **General Idea**
+  * **Language:** C++
+  * **Technique Level:** Range: Basics - Easy
+  * **Key Takeaway:** Operation Precedence
+  * **Explanation:** Operations have precedence meaning that some operations are evaluated before the others, for example; 5+10+9 is treated as (5+10)+9<br>And while this may be viewed as "no problem" as it still aligns with mathematical rules, it is actaully a big problem as follows:<br><br> if int x = 1000000;<br>cout<<x * x; needs to be generalized into 64 bits to not overflow<br>So if we choose to generalize by (* 1LL) we have to regard precedence: 1LL * x * x which is treated as (1LL * x) * x but for: x * x * 1LL:<br> x * x will give the overflowed result first then this result is generalized to long long by (1LL) so we have to use parentheses as follows: x * (x * 1LL) for the generalization to happen first in the bracket, and careful for x * x  *(x * 1LL) as the multiplication is evaluated from left to right so x * x will give an overflowed result first.
+```mermaid
+graph TD
+    Assign["*"] --> VarRes["x"]
+    Assign --> SubAssign["()"]
+    SubAssign --> VarX["*"]
+    VarX --> Num5["x"]
+    VarX --> Numx["1LL"]
+```
+
+```mermaid
+graph TD
+   Assign["*"] --> VarRes["x"]
+    Assign --> SubAssign["()"]
+    SubAssign --> VarX["*"]
+    VarX --> Num5["1000000"]
+    VarX --> Numx["1LL"]
+```
+
+```mermaid
+graph TD
+   Assign["*"] --> VarRes["x"]
+    Assign --> SubAssign["()"]
+    SubAssign --> VarX["1000000 represented on 64-bits"]
+```
+> Note: The 1000000 was generalized/promoted to long long and had 64-bit reserved since then
+
+```mermaid
+graph TD
+   Assign["*"] --> VarRes["x"]
+    Assign --> SubAssign["1000000 represented on 64-bits"]
+```
+
+```mermaid
+graph TD
+   Assign["*"] --> VarRes["1000000"]
+    Assign --> SubAssign["1000000 represented on 64-bits"]
+```
+> Note: the other 1000000 (still represented on 32 bits) will be promoted to long long and have 64 bits reserved for it
+
+```mermaid
+graph TD
+   Assign["1e12 represented on 64-bits"]
+```
+Another Example: float x = 5/2 stores 2 in x although x is float, due too the higher precedence of / operator compared for the = operator, & since 5 and 2 are int values, int division is performed after that, the float-point-truncated result is assigned to x; 
+```mermaid
+graph TD
+    Assign["="] --> VarRes["x"]
+    Assign --> SubAssign["/"]
+    SubAssign --> VarX["5"]
+    SubAssign --> Num5["2"]
+```
+
+```mermaid
+graph TD
+   Assign["="] --> VarRes["x"]
+    Assign --> SubAssign["2"]
+```
+> Note: x now has 2 assigned to it as = is an operator with a side effect (which is assigning new values to the left operand)
+
+```mermaid
+graph TD
+   Assign["2"]
+```
+<hr>
